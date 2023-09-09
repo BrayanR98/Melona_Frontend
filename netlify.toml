@@ -1,0 +1,4 @@
+
+command = "npm run build" # O el comando que necesites para construir tu proyecto
+
+publish = "build"
