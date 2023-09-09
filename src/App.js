@@ -1,7 +1,7 @@
 
 //import axios from 'axios';
 import './App.css';
-import React, { createElement, useEffect,useState,useRef} from 'react';
+import React, {  useEffect,useState,useRef} from 'react';
 import local from './img/local.jpg'
 import logoNaranja from './img/logoNaranja.jpg'
 import logowasap from './img/whatsapp.ico'
@@ -14,7 +14,7 @@ function App() {
   const imagesArray = [local, logoNaranja, promo1,promo2,promo3,promo4];
   const [productos, setProductos] = useState({});
   
-  
+  console.log(productos)
   useEffect(() => {
      //fetch('http://melonaservices.somee.com/api/Productos')
     //fetch('https://localhost:7258/api/Productos')
@@ -231,7 +231,7 @@ function App() {
   return (
     <div >
       {/* ESLIDER DE FOTOS */}
-      <div className="main-container  margen">
+      <div className="main-container  ">
           <div className="slider-container margen">
             <div className='leftArrow' onClick={() => scrollToImage('prev')}>&#10092;</div>
             <div className='rightArrow' onClick={() => scrollToImage('next')}>&#10093;</div>
