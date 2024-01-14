@@ -26,7 +26,7 @@ function App() {
     const arrayProductos = objcard.filter(element => element.categoria === idcategoria);
     const productosCategoria = arrayProductos.map(item => (
       <li key={item.nombre}>
-        <a className="dropdown-item active" onClick={() => scrollProducto(`#${item.nombre}`)}>
+        <a className="dropdown-item active" href="" onClick={() => scrollProducto(`#${item.nombre}`)}>
           {item.nombre}
         </a>
       </li>
@@ -53,7 +53,7 @@ function App() {
       <div key={index}>
         <li className="nav-item">
           <div className="dropdown categoria">
-            <a className="nav-link text-light active" aria-current="page" onClick={() => scrollIntoView(`#${item.nombre}`)}>
+            <a className="nav-link text-light active" href="" aria-current="page" onClick={() => scrollIntoView(`#${item.nombre}`)}>
               {item.nombre}
             </a>
             <button className="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
@@ -157,7 +157,7 @@ function App() {
     return <>{renderCards}</>;
   };
 
-  const slides = ["https://media.istockphoto.com/id/520410807/es/foto/hamburguesa-con-queso.jpg?s=612x612&w=0&k=20&c=YDYCsfNMOHATJlvcswo7mjebVeLOtctrQeUPJGlR3jc=", "https://media.istockphoto.com/id/1398630614/es/foto/hamburguesa-con-queso-de-tocino-en-un-bollo-tostado.jpg?s=612x612&w=0&k=20&c=KLPvSrqnisFDDyWr-R8LiT9UHEeNgSmriFQm4yqVGM4="];
+ // const slides = ["https://media.istockphoto.com/id/520410807/es/foto/hamburguesa-con-queso.jpg?s=612x612&w=0&k=20&c=YDYCsfNMOHATJlvcswo7mjebVeLOtctrQeUPJGlR3jc=", "https://media.istockphoto.com/id/1398630614/es/foto/hamburguesa-con-queso-de-tocino-en-un-bollo-tostado.jpg?s=612x612&w=0&k=20&c=KLPvSrqnisFDDyWr-R8LiT9UHEeNgSmriFQm4yqVGM4="];
   const listRef = useRef();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -214,7 +214,7 @@ function App() {
       <header>
         <nav className="navbar nav navbar-toggler navbar-dark bg-dark fixed-top">
           <div className="container-fluid">
-            <a className="navbar-brand text-light" href="#" id="nombrenav">LA MELONA</a>
+            <a className="navbar-brand text-light" href="" id="nombrenav">LA MELONA</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
